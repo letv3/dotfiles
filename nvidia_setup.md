@@ -36,6 +36,7 @@
 #### Install Specific Version of CUDA Toolkit
 [Link to CUDNN specific version](https://developer.nvidia.com/cuda-toolkit-archive)
 
+NOTE: In this case install specific version of Tensorflow, see compatibility tables
 
 #### Post-installation Action
 1. add to __.bashrc__ `export PATH=/usr/local/cuda-12.4/bin${PATH:+:${PATH}}`
