@@ -12,7 +12,9 @@
 2. `sudo apt-get --purge remove "*nvidia*" "libxnvctrl*"`
 3. `sudo apt autoremove`
 
+
 [Link to NVIDIA Driver installation steps](https://ubuntu.com/server/docs/nvidia-drivers-installation)
+
 
 
 ### Install CUDA Toolkit
@@ -23,13 +25,16 @@
 3. `gcc --version`
 4. `uname -r`
 
-#### Package Manager Installation
+#### Package Manager Installation (Default Version)
 1. `sudo apt-get install linux-headers-$(uname -r)`
 2. `wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.1-1_all.deb`
   - `sudo dpkg -i cuda-keyring_1.1-1_all.deb`
 3. `sudo apt-get update`
 4. `sudo apt-get install cuda-toolkit`
 5. `sudo reboot`
+
+#### Install Specific Version of CUDA Toolkit
+[Link to CUDNN specific version](https://developer.nvidia.com/cuda-toolkit-archive)
 
 
 #### Post-installation Action
