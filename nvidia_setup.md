@@ -7,9 +7,10 @@
 3. Install using __ubuntu-drivers__ tool - `sudo ubuntu-drivers install nvidia:[545|550]` (select on of the versions)
 4. Install additional components `sudo apt install nvidia-utils-550-server`
 
-#### Remove Nvidia Driver
-1. `sudo apt --purge remove '*nvidia*${DRIVER_BRANCH}*'`
-2. `sudo apt autoremove`
+#### Remove Nvidia Driver and CUDA Toolkit
+1. `sudo apt-get --purge remove "*cuda*" "*cublas*" "*cufft*" "*cufile*" "*curand*" "*cusolver*" "*cusparse*" "*gds-tools*" "*npp*" "*nvjpeg*" "nsight*" "*nvvm*"`
+2. `sudo apt-get --purge remove "*nvidia*" "libxnvctrl*"`
+3. `sudo apt autoremove`
 
 [Link to NVIDIA Driver installation steps](https://ubuntu.com/server/docs/nvidia-drivers-installation)
 
