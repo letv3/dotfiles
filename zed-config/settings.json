@@ -1,0 +1,86 @@
+{
+  "telemetry": {
+    "metrics": false
+  },
+  "autosave": "on_window_change",
+  "features": {
+    "inline_completion_provider": "none"
+  },
+  "ui_font_size": 20,
+  "buffer_font_family": "Ubuntu",
+  "buffer_font_size": 15,
+  "theme": "Ayu Dark",
+  "centered_layout": {
+    "left_padding": 0.2,
+    "right_padding": 0.2
+  },
+  "current_line_highlight": "all",
+  "cursor_blink": true,
+  "default_dock_anchor": "bottom",
+  "tab_bar": {
+    "show": true,
+    "show_nav_history_buttons": false
+  },
+  "tabs": {
+    "close_position": "right",
+    "file_icons": true,
+    "git_status": true
+  },
+  "toolbar": {
+    "breadcrumbs": true,
+    "quick_actions": true
+  },
+  "ensure_final_newline_on_save": true,
+  "use_autoclose": false,
+  "indent_guides": {
+    "enabled": true,
+    "line_width": 1,
+    "active_line_width": 1,
+    "coloring": "fixed",
+    "background_coloring": "disabled"
+  },
+  "languages": {
+    "Python": {
+      "indent_guides": {
+        "enabled": true
+      }
+    }
+  },
+  "git": {
+    "git_gutter": "tracked_files",
+    "inline_blame": {
+      "enabled": true
+    }
+  },
+  "terminal": {
+    "alternate_scroll": "off",
+    "blinking": "on",
+    "copy_on_select": false,
+    "env": {
+      "ZED": "1"
+    },
+    "font_family": "Ubuntu Mono",
+    "font_size": 18,
+    "option_as_meta": true,
+    "button": false,
+    "shell": "system",
+    "toolbar": {
+      "title": true,
+      "button": true
+    },
+    "working_directory": "current_project_directory"
+  },
+  "auto_fold_dirs": true,
+  "assistant": {
+    "default_model": {
+      "provider": "openai",
+      "model": "gpt-4o"
+    },
+    "version": "2",
+    "enabled": true,
+    "button": true
+  },
+  "outline_panel": {
+    "button": true
+  }
+}
