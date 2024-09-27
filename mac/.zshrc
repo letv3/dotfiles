@@ -17,6 +17,17 @@ alias python=/usr/local/bin
 ZSH_THEME="powerlevel10k/powerlevel10k"
 source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
 
+# Aliases
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
