@@ -26,11 +26,11 @@
 4. `uname -r`
 
 #### Package Manager Installation (Default Version)
-1. `sudo apt-get install linux-headers-$(uname -r)`
-2. `wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.1-1_all.deb`
+1. `sudo apt install linux-headers-$(uname -r)`
+2. `wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/cuda-keyring_1.1-1_all.deb`
   - `sudo dpkg -i cuda-keyring_1.1-1_all.deb`
-3. `sudo apt-get update`
-4. `sudo apt-get install cuda-toolkit`
+3. `sudo apt update`
+4. `sudo apt install nvidia-cuda-toolkit`
 5. `sudo reboot`
 
 #### Install Specific Version of CUDA Toolkit
