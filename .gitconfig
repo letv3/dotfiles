@@ -1,0 +1,9 @@
+[user]
+	email = your.email@example.com
+	name = Your Name
+
+[url "git@gitlab.com:"]
+	insteadOf = https://gitlab.com/
+
+[url "git@gitlab.exponea.com:"]
+	insteadOf = https://gitlab.exponea.com/

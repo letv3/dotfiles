@@ -1,0 +1,12 @@
+# General
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias rezsh="source ~/.zshrc"
+
+# Python Aliases
+alias pact='pyenv activate'
+alias pde='pyenv deactivate'
+
+# Python alias
+alias python=python3
