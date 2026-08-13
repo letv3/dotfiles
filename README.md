@@ -27,6 +27,25 @@ Essential configuration files for agentic development with opencode and Claude C
 ### Terminal
 - `.tmux.conf` - Tmux configuration with mouse support enabled
 
+### Claude Code
+- `claude-code/settings.json` - Claude Code settings:
+  - Default model (haiku)
+  - Status line configuration
+  - Enabled plugins (bloomreach-essentials)
+  - Theme and effort level settings
+
+- `claude-code/statusline-command.sh` - Custom status line script:
+  - Shows current directory, git branch, context usage
+  - Mirrors Powerlevel10k prompt style
+
+- `claude-code/plugins/bloomreach-essentials.mcp.json` - MCP server configurations:
+  - Atlassian (Jira/Confluence) SSE
+  - Chrome DevTools
+  - Context7 documentation
+
+- `claude-code/plugins/installed_plugins.json` - Plugin registry
+- `claude-code/plugins/bloomreach-essentials-help.md` - Plugin help command
+
 ### Opencode / Agentic Development
 - `opencode/opencode.jsonc` - Main opencode configuration:
   - Model routing and provider setup
@@ -62,6 +81,7 @@ Essential configuration files for agentic development with opencode and Claude C
    cp .tmux.conf ~/
    cp -r .aliases ~/
    cp -r opencode ~/.config/
+   cp -r claude-code ~/.claude/
    ```
 
 4. **Update placeholders:**

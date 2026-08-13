@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "plugins": {
+    "bloomreach-essentials@bloomreach-claude-code-marketplace": [
+      {
+        "scope": "user",
+        "installPath": "/Users/<USERNAME>/.claude/plugins/cache/bloomreach-claude-code-marketplace/bloomreach-essentials/18a9326129bb",
+        "version": "18a9326129bb",
+        "installedAt": "2026-03-12T14:16:45.287Z",
+        "lastUpdated": "2026-03-12T14:16:45.287Z",
+        "gitCommitSha": "18a9326129bb64d4dac07ba733aa2830872c2087"
+      }
+    ]
+  }
+}

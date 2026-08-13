@@ -1,0 +1,13 @@
+{
+  "model": "haiku",
+  "statusLine": {
+    "type": "command",
+    "command": "bash ~/.claude/statusline-command.sh"
+  },
+  "enabledPlugins": {
+    "bloomreach-essentials@bloomreach-claude-code-marketplace": true
+  },
+  "alwaysThinkingEnabled": false,
+  "effortLevel": "low",
+  "theme": "dark-daltonized"
+}
