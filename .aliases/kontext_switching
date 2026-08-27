@@ -1,0 +1,12 @@
+kc() { i
+  if [ "$#" -eq 0 ]; then 
+    ARG=$(kubectl config get-contexts -o=name | fzf); 
+  else 
+    ARG=$(kubectl config get-contexts -o=name | fzf -e -1 -q $1); 
+  fi; 
+
+  if [ -n "$ARG" ]; then 
+    kubectl config use-context $ARG; 
+  fi 
+}
+

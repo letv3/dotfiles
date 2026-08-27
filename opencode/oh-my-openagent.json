@@ -1,5 +1,14 @@
 {
   "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-openagent/dev/assets/oh-my-opencode.schema.json",
+  "disabled_mcps": [
+    "atlassian",
+    "bloomreach_docs_data_hub",
+    "bloomreach_docs_engagement",
+    "duckduckgo",
+    "lsp",
+    "playwright",
+    "slack"
+  ],
   "claude_code": {
     "plugins_override": {
       "bloomreach-essentials@bloomreach-claude-code-marketplace": false
@@ -7,7 +16,7 @@
   },
   "agents": {
     "sisyphus": {
-      "model": "bloomreach-litellm/bedrock/kimi-k2.5",
+      "model": "bloomreach-litellm/vertex_ai/gemini-3.7-flash",
       "fallback_models": [
         {
           "model": "bloomreach-litellm/vertex_ai/glm-5"

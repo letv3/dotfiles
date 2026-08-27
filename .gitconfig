@@ -1,6 +1,9 @@
+[diff "kube-vault"]
+	textconv = /Users/oleksandr.lytvyn/work/core/kube/venv/bin/python /Users/oleksandr.lytvyn/work/core/kube/deploy.py show
+	cachetextconv = false
 [user]
-	email = your.email@example.com
-	name = Your Name
+	email = oleksandr.lytvyn@bloomreach.com
+	name = Oleksandr Lytvyn
 
 [url "git@gitlab.com:"]
 	insteadOf = https://gitlab.com/

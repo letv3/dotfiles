@@ -1,0 +1,6 @@
+.DS_Store
+.omo/
+*.log
+*.bak*
+*.backup
+node_modules/

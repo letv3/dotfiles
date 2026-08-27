@@ -7,7 +7,7 @@
   // Without this, opencode falls back to the "last used" model from the UI picker,
   // which overrides the per-agent model the plugin configured.
   // To override for a one-off session: opencode --model <provider>/<model>
-  "model": "bloomreach-litellm/bedrock/kimi-k2.5",
+  "model": "bloomreach-litellm/vertex_ai/gemini-3.7-flash",
   "provider": {
     "bloomreach-litellm": {
       "npm": "@ai-sdk/openai-compatible",
@@ -19,6 +19,7 @@
       // Declaring all models used by oh-my-openagent.json so opencode can validate them.
       // Without this, any bloomreach-litellm model is rejected as "not valid" at session start.
       "models": {
+        "vertex_ai/gemini-3.7-flash":{},
         "bedrock/kimi-k2.5":        {},
         "vertex_ai/glm-5":          {},
         "openai/gpt-5.6-sol":       {},
@@ -40,14 +41,19 @@
       "command": ["sh", "-c", "npx -y @arizeai/phoenix-mcp@latest --baseUrl ${INSIDE_DEV_CONTAINER:+http://phoenix:6006}${INSIDE_DEV_CONTAINER:-http://localhost:6006}"],
       "enabled": true
     },
-    "duckduckgo": {
-      "type": "local",
-      "command": ["uvx", "duckduckgo-mcp-server"],
-      "enabled": true
-    },
     "glean_default": {
       "type": "remote",
       "url": "https://bloomreach-be.glean.com/mcp/default",
+      "enabled": true
+    },
+    "codegraph": {
+      "type": "local",
+      "command": ["codegraph", "serve", "--mcp"],
+      "enabled": true
+    },
+    "grep_app": {
+      "type": "remote",
+      "url": "https://mcp.grep.app",
       "enabled": true
     }
   }

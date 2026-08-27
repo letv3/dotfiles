@@ -10,3 +10,4 @@ alias pde='pyenv deactivate'
 
 # Python alias
 alias python=python3
+

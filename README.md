@@ -13,19 +13,31 @@ Essential configuration files for agentic development with opencode and Claude C
   - Go PATH configuration
   - Claude-Code environment variables (sanitized)
   - Aliases loading
+- `.zshenv` - Environment initialization with dynamic argcomplete fpath resolution
+- `.zprofile` - Login shell configuration (Homebrew, pipx PATH)
+- `.p10k.zsh` - Powerlevel10k prompt configuration
 
-- `.aliases/personal` - General shell aliases for:
-  - File listing (ll, la, l)
-  - Python/pyenv shortcuts
-  - Shell reloading
+- `.aliases/` - Shell aliases:
+  - `personal` - General file listing, python/pyenv shortcuts, shell reloading
+  - `kube` - Kubernetes kubectl shortcuts, deployment/release scripts, superadmin grants
+  - `kontext_switching` - Fuzzy context switching via fzf
+  - `recommendations` - Recommendation service shortcuts
+  - `terraform` - Terraform shortcuts
 
-### Git
-- `.gitconfig` - Git configuration with:
-  - User info (placeholder - update with your details)
-  - GitLab URL rewriting rules
+### VCS & Git
+- `.gitconfig` - Git configuration with diff textconv and GitLab URL rewrites
+- `git/ignore` - Global git ignore file (`~/.config/git/ignore`)
+- `jj/config.toml` - Jujutsu (jj) VCS configuration (`~/.config/jj/config.toml`)
 
-### Terminal
+### Terminal & Tools
 - `.tmux.conf` - Tmux configuration with mouse support enabled
+- `ghostty/config` - Ghostty terminal configuration
+- `marimo/marimo.toml` - Marimo notebook configuration
+- `bd/config.yaml` - Beads configuration
+
+### Agent Skills
+- `agents/skills/init/SKILL.md` - Workspace experimentation initialization skill
+- `agents/skills/local-to-memory/SKILL.md` - Knowledge capture & extraction skill
 
 ### Claude Code
 - `claude-code/settings.json` - Claude Code settings:
@@ -108,7 +120,7 @@ The `oh-my-openagent.json` configures the following agents:
 
 | Agent | Primary Model | Purpose |
 |-------|--------------|---------|
-| sisyphus | bedrock/kimi-k2.5 | Primary orchestrator |
+| sisyphus | vertex_ai/gemini-3.7-flash | Primary orchestrator |
 | oracle | openai/gpt-5.6-sol (xhigh) | Complex debugging/architecture |
 | librarian | vertex_ai/glm-5 | External documentation search |
 | explore | vertex_ai/glm-5 | Codebase exploration |
